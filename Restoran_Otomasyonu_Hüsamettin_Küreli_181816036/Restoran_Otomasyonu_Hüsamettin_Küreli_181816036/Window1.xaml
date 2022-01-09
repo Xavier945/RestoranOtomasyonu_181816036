@@ -1,0 +1,63 @@
+﻿<Window x:Class="Restoran_Otomasyonu_Hüsamettin_Küreli_181816036.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Restoran_Otomasyonu_Hüsamettin_Küreli_181816036"
+        mc:Ignorable="d"
+        Title="Musteri" Height="451.4" Width="1013.1" Background="#FF00FAFF" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="musteriekle_btn"  HorizontalAlignment="Left" Height="23" Margin="84,186,0,0" VerticalAlignment="Top" Width="120" Click="Musteriekle_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="      Musteri Ekle" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="musterisil_btn"  HorizontalAlignment="Left" Height="23" Margin="84,214,0,0" VerticalAlignment="Top" Width="120" Click="Musterisil_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="        Musteri Sil" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="musteriguncelle_btn"  HorizontalAlignment="Left" Height="23" Margin="84,242,0,0" VerticalAlignment="Top" Width="120" Click="Musteriguncelle_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="  Musteri Guncelle" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="musteriara_btn"  HorizontalAlignment="Left" Height="23" Margin="84,270,0,0" VerticalAlignment="Top" Width="120" Click="Musteriara_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="        Musteri Ara" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="musterilerigoster_btn"  HorizontalAlignment="Left" Height="23" Margin="84,302,0,0" VerticalAlignment="Top" Width="120" Click="Musterilerigoster_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="   Musterileri Goster" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="randevuekle_btn"  HorizontalAlignment="Left" Height="23" Margin="317,186,0,0" VerticalAlignment="Top" Width="120" Click="Randevuekle_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="     Randevu Ekle" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="randevusil_btn"  HorizontalAlignment="Left" Height="23" Margin="317,214,0,0" VerticalAlignment="Top" Width="120" Click="Randevusil_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="       Randevu Sil" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="randevuguncelle_btn"  HorizontalAlignment="Left" Height="23" Margin="317,242,0,0" VerticalAlignment="Top" Width="120" Click="Randevuguncelle_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="   Randevu Guncelle" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="randevuara_btn"  HorizontalAlignment="Left" Height="23" Margin="317,271,0,0" VerticalAlignment="Top" Width="120" Click="Randevuara_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="       Randevu Ara" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="randevularigoster_btn"  HorizontalAlignment="Left" Height="23" Margin="317,302,0,0" VerticalAlignment="Top" Width="120" Click="Randevularigoster_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="  Randevuları Goster" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <DataGrid x:Name="randevuDataGrid" HorizontalAlignment="Left" Height="187" Margin="462,223,0,0" VerticalAlignment="Top" Width="534" SelectionChanged="RandevuDataGrid_SelectionChanged" Loaded="RandevuDataGrid_Loaded" Unloaded="RandevuDataGrid_Unloaded"/>
+        <DataGrid x:Name="musteriDataGrid" HorizontalAlignment="Left" Height="192" Margin="462,10,0,0" VerticalAlignment="Top" Width="534" RenderTransformOrigin="0.491,0.512" SelectionChanged="MusteriDataGrid_SelectionChanged" Loaded="MusteriDataGrid_Loaded" Unloaded="MusteriDataGrid_Unloaded"/>
+        <TextBox x:Name="ad_txtbox" HorizontalAlignment="Left" Height="23" Margin="84,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="soyad_txtbox" HorizontalAlignment="Left" Height="23" Margin="84,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tc_txtbox" HorizontalAlignment="Left" Height="23" Margin="84,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.522,1.55"/>
+        <TextBox x:Name="musteri_id_txtbox" HorizontalAlignment="Left" Height="23" Margin="317,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="randevusure_txtbox" HorizontalAlignment="Left" Height="23" Margin="317,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="randevutarih_txtbox" HorizontalAlignment="Left" Height="23" Margin="317,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="randevusaat_txtbox" HorizontalAlignment="Left" Height="23" Margin="317,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ad" HorizontalAlignment="Left" Margin="27,49,0,0" VerticalAlignment="Top" Width="52" Height="23" RenderTransformOrigin="1.495,0.805"/>
+        <Label Content="Soyad" HorizontalAlignment="Left" Margin="27,77,0,0" VerticalAlignment="Top" Width="52" Height="23" RenderTransformOrigin="1.495,0.805"/>
+        <Label Content="TC" HorizontalAlignment="Left" Margin="27,105,0,0" VerticalAlignment="Top" Width="52" Height="23" RenderTransformOrigin="1.495,0.805"/>
+        <Label Content="Randevu Alinan &#xA;Musterinin Id" HorizontalAlignment="Left" Margin="214,23,0,0" VerticalAlignment="Top" Width="100" Height="49" RenderTransformOrigin="1.495,0.805"/>
+        <Label Content="Randevu Tarih" HorizontalAlignment="Left" Margin="214,64,0,0" VerticalAlignment="Top" Width="98" Height="28" RenderTransformOrigin="1.495,0.805"/>
+        <Label Content="Randevu Saat" HorizontalAlignment="Left" Margin="214,96,0,0" VerticalAlignment="Top" Width="98" Height="23" RenderTransformOrigin="1.495,0.805"/>
+        <Label Content="Randevu Sure" HorizontalAlignment="Left" Margin="214,124,0,0" VerticalAlignment="Top" Width="98" Height="23" RenderTransformOrigin="1.495,0.805"/>
+        <Button x:Name="anasayfayadon_btn" HorizontalAlignment="Left" Margin="190,344,0,0" VerticalAlignment="Top" Width="122" Click="Anasayfayadon_btn_Click" Height="53">
+            <TextBox HorizontalAlignment="Left" Height="53" TextWrapping="Wrap" Text="   &#xA;   Ana Sayfaya Dön" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="White"/>
+        </Button>
+        <Label Content="Randevu Kod" HorizontalAlignment="Left" Margin="214,152,0,0" VerticalAlignment="Top" Width="98" Height="28" RenderTransformOrigin="1.495,0.805"/>
+        <TextBox x:Name="randevukod_txtbox" HorizontalAlignment="Left" Height="23" Margin="317,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

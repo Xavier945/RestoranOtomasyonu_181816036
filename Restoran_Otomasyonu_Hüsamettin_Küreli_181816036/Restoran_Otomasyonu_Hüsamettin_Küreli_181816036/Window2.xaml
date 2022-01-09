@@ -1,0 +1,37 @@
+﻿<Window x:Class="Restoran_Otomasyonu_Hüsamettin_Küreli_181816036.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Restoran_Otomasyonu_Hüsamettin_Küreli_181816036"
+        mc:Ignorable="d"
+        Title="Yonetici" Height="450" Width="800" Background="#FF00FF96">
+    <Grid>
+        <Button x:Name="yemekekle_btn"  HorizontalAlignment="Left" Height="23" Margin="179,192,0,0" VerticalAlignment="Top" Width="120" Click="Yemekekle_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" Text="       Yemek Ekle" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="yemeksil_btn"  HorizontalAlignment="Left" Height="23" Margin="179,220,0,0" VerticalAlignment="Top" Width="120" Click="Yemeksil_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" Text="        Yemek Sil" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="yemekguncelle_btn"  HorizontalAlignment="Left" Height="23" Margin="179,248,0,0" VerticalAlignment="Top" Width="120" Click="Yemekguncelle_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" Text="    Yemek Guncelle" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="yemekara_btn"  HorizontalAlignment="Left" Height="23" Margin="179,276,0,0" VerticalAlignment="Top" Width="120" Click="Yemekara_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" Text="       Yemek Ara" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <Button x:Name="yemeklerigoster_btn"  HorizontalAlignment="Left" Height="23" Margin="179,304,0,0" VerticalAlignment="Top" Width="120" Click="Yemeklerigoster_btn_Click">
+            <TextBox HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" Text="   Yemekleri Goster" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="Yellow"/>
+        </Button>
+        <TextBox x:Name="yemekad_txtbox" HorizontalAlignment="Left" Height="23" Margin="179,92,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="yemekfiyat_txtbox" HorizontalAlignment="Left" Height="23" Margin="179,120,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="yemektat_txtbox" HorizontalAlignment="Left" Height="23" Margin="179,148,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="anasayfayadon1_btn" HorizontalAlignment="Left" Margin="179,345,0,0" VerticalAlignment="Top" Width="120" Click="Anasayfayadon1_btn_Click" Height="53">
+            <TextBox HorizontalAlignment="Left" Height="53" TextWrapping="Wrap" Text="   &#xD;&#xA;   Ana Sayfaya Dön" VerticalAlignment="Top" Width="120" IsEnabled="False" Background="White"/>
+        </Button>
+        <DataGrid x:Name="yemekDataGrid" HorizontalAlignment="Left" Height="400" Margin="476,10,0,0" VerticalAlignment="Top" Width="308" SelectionChanged="YemekDataGrid_SelectionChanged" Loaded="YemekDataGrid_Loaded" Unloaded="YemekDataGrid_Unloaded"/>
+        <Label Content="Ad" HorizontalAlignment="Left" Margin="93,89,0,0" VerticalAlignment="Top" Width="56"/>
+        <Label Content="Fiyat" HorizontalAlignment="Left" Margin="93,115,0,0" VerticalAlignment="Top" Width="56"/>
+        <Label Content="Tat" HorizontalAlignment="Left" Margin="93,141,0,0" VerticalAlignment="Top" Width="56"/>
+
+    </Grid>
+</Window>
